@@ -31,3 +31,12 @@ module.exports = withPWA({
     buildExcludes: [/middleware-manifest.json$/],  // 追加
   },
 })
+
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+});
+
+module.exports = withPWA({
+  // Your Next.js config
+});
+
