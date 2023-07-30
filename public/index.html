@@ -2,30 +2,6 @@
 <!--  Last Published: Sun Jul 30 2023 05:40:23 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64bf00791af5154d35a51bdf" data-wf-site="64bf00791af5154d35a51c1f">
 <head>
-  <script>
-    const registerServiceWorker = async () => {
-      if ("serviceWorker" in navigator) {
-        try {
-          const registration = await navigator.serviceWorker.register("/sw.js", {
-            scope: "/",
-          });
-          if (registration.installing) {
-            console.log("Service worker installing");
-          } else if (registration.waiting) {
-            console.log("Service worker installed");
-          } else if (registration.active) {
-            console.log("Service worker active");
-          }
-        } catch (error) {
-          console.error(`Registration failed with ${error}`);
-        }
-      }
-    };
-    
-    registerServiceWorker();
-    </script>
-
-    
   <meta charset="utf-8">
   <title>佐用貴歩のデジタル名刺</title>
   <meta content="こんにちは、佐用貴歩です。和白で妻１人、子供３人の５人ぐらしをしています。仕事は生命保険のセールスを行っています。" name="description">
@@ -49,7 +25,28 @@
   <!--  PWA読み込みコード・始め  -->
   <link rel="manifest" href="/manifest.json">
 
+<script>
+const registerServiceWorker = async () => {
+  if ("serviceWorker" in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.register("/sw.js", {
+        scope: "/",
+      });
+      if (registration.installing) {
+        console.log("Service worker installing");
+      } else if (registration.waiting) {
+        console.log("Service worker installed");
+      } else if (registration.active) {
+        console.log("Service worker active");
+      }
+    } catch (error) {
+      console.error(`Registration failed with ${error}`);
+    }
+  }
+};
 
+registerServiceWorker();
+</script>
 <!--  PWA読み込みコード・終わり  -->
 
 </head>
