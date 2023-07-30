@@ -21,16 +21,7 @@ module.exports = withBundleAnalyzer({
   }
 })
 
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
 
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    runtimeCaching,
-    buildExcludes: [/middleware-manifest.json$/],  // 追加
-  },
-})
 
 const withPWA = require("@ducanh2912/next-pwa").default({
   dest: "public",
