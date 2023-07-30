@@ -21,6 +21,18 @@ export default class MyDocument extends Document {
           </Head>
 
           <body>
+          <noscript>
+            <iframe
+              src={
+                "https://www.googletagmanager.com/ns.html?id=GTM-MJ28WWZ&gtm_auth=-FNbDkDEkVnwbkvCdu8gYA&gtm_preview=env-1&gtm_cookies_win=x"
+              }
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+
+
             <script
               dangerouslySetInnerHTML={{
                 __html: `
