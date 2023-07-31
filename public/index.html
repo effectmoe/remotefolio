@@ -404,5 +404,175 @@ registerServiceWorker();
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64bf00791af5154d35a51c1f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
+
+
+  <!--Firebase-->
+  <script type="module">
+  
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js'
+  
+    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js'
+  
+      // Add Firebase products that you want to use
+    import { getAuth, onAuthStateChanged, signInAnonymously } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js'
+    import { getFirestore, doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js'
+    import { getMessaging, getToken } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging.js'
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyCGYS03THZx5MXHuQt8xZ2Zm3y-SepPKnQ",
+      authDomain: "pwapushtest-ca52a.firebaseapp.com",
+      projectId: "pwapushtest-ca52a",
+      storageBucket: "pwapushtest-ca52a.appspot.com",
+      messagingSenderId: "53262820382",
+      appId: "1:53262820382:web:f57d57669635f114b0ba0f",
+      measurementId: "G-8Z0N1460ZX"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+    const messaging = getMessaging(app);
+  
+    function getFCMToken(event, link) {
+        // デバイストークンを取得
+        let devicetoken = null;
+        getToken(messaging, { vapidKey: 'BCnvQ-Z4UeexI_ze08v4YwXYpr3pmRWRcT36PgfzRZGOgOMUi_2TSrKTbDPMEl9AomBP62GDX96wQ9k_8XxXJmg' }).then((currentToken) => {
+            //alert(currentToken);
+            devicetoken = currentToken;
+        })
+        .catch((err) => {
+            console.log('An error occurred while retrieving token. ', err);
+        })
+        .finally(() => {
+            console.log('link=', link);
+            console.log('target=', event.target);
+            alert('devicetoken2=' + devicetoken);
+            showRegister(event.target, link, devicetoken, function (email, devicetoken) {
+                console.log('endof1 email=', email);
+                console.log('endof1 devicetoken=', devicetoken);
+                localStorage.setItem('email', email);
+                setDoc(doc(getFirestore(), 'persons', email), { email: email, devicetoken: devicetoken, }).finally(() => {
+                    event.target.setAttribute('href', link + '?email=' + email);
+                    event.target.click();
+                });
+            });
+        });
+    };
+
+    window.onload= function() {
+        // テスト用にカウンセリングシートの向け先を強制変更
+        const links = document.querySelectorAll('.notion-callout .notion-callout__content a.notion-link[href*="https://tally.so"]');
+        console.log('href=', links);
+        if (links && 0 < links.length) {
+            for (var lidx=0; lidx < links.length; lidx++) {
+                if (-1 < links[lidx].innerText.indexOf('カウンセリングシート')) {
+                    const link = '' + links[lidx].getAttribute('href');
+                    links[lidx].setAttribute('href', 'javascript:undefined');
+                    links[lidx].onclick = (event) => {
+                        if (-1 < event.target.getAttribute('href').indexOf('email=')) {
+                            return true;
+                        }
+                        if('Notification' in window /*&& Notification.permission !== "granted" && Notification.permission !== "denied"*/) {
+                            if (Notification.permission !== 'denied') {
+                                Notification.requestPermission().then((permission) => {
+                                    if (permission !== 'denied') {
+                                        getFCMToken(event, link);
+                                    }
+                                });
+                            }
+                            else {
+                                getFCMToken(event, link);
+                            }
+                            return false;
+                        }
+                        else {
+                            // WebPush非対応のブラウザ
+                            showRegister(event.target, link, devicetoken, function (email, devicetoken) {
+                                console.log('endof2 email=', email);
+                                console.log('endof2 devicetoken=', devicetoken);
+                                localStorage.setItem('email', email);
+                                setDoc(doc(getFirestore(), 'persons', email), { email: email, devicetoken: null, }).finally(() => {
+                                    event.target.setAttribute('href', link + '?email=' + email);
+                                    event.target.click();
+                                });
+                            });
+                            return false;
+                        }
+                    };
+                }
+            }
+        }
+    };
+  </script>
+  
+  <script>
+    function addToPwa(){
+        addToHome();
+        appInstall();
+    }
+    function showRegister(target, link, devicetoken, callback, onemore) {
+        console.log('devicetoken=', devicetoken);
+        console.log('target=', target);
+        console.log('link=', link);
+        const savedemail = localStorage.getItem('email');
+        if (savedemail) {
+            callback(savedemail, devicetoken);
+            return true;
+        }
+        let message = '先ずはメールアドレスをご入力下さい。';
+        if (onemore) {
+            message = '入力された内容はメールアドレスではありません。\nメールアドレスをご入力下さい。';
+        }
+        const email = prompt(message, '');
+        console.log('email=', email);
+        if (!('string' === typeof email && 0 < email.length)) {
+            return false;
+        }
+        // バリデート
+        const emailcheck = /^[a-zA-Z0-9_+-]+(\.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/;
+        if (emailcheck.test(email)) {
+            // XXXX Firebase へ 書き込み
+            callback(email, devicetoken);
+            return true;
+        }
+        return showRegister(target, link, devicetoken, callback, true);
+    }
+  </script>
+  
+  
+  <script>
+  let deferredPrompt;
+  window.addEventListener('beforeinstallprompt',function(event) {
+      deferredPrompt = event;
+   
+  });
+  
+  function appInstall(){
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            alert('インストール完了しました');
+          } else {
+            alert('インストールされませんでした');
+          }
+          deferredPrompt = null;
+        });
+  }
+  
+  </script>
+  
+  
+  <script>
+  // ブラウザがSafariであるかどうかを確認
+  var isSafari = navigator.userAgent;
+  
+  function addToHome(){
+    if(isSafari.includes('Safari')&& !isSafari.includes('Chrome')){
+  alert('iPhone or iPadをお使いの場合は「ホーム画面に追加」ボタンを押してください');
+    }
+  }
+  
+  </script>
 </body>
 </html>
