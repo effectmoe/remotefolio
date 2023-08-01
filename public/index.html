@@ -463,7 +463,7 @@
 
     window.onload= function() {
         // テスト用にカウンセリングシートの向け先を強制変更
-        const links = document.querySelectorAll('.notion-callout .notion-callout__content a.notion-link[href*="https://tally.so"]');
+        const links = document.querySelectorAll('.main-grid a.content-block.w-inline-block[href*="https://tally.so"]');
         console.log('href=', links);
         if (links && 0 < links.length) {
             for (var lidx=0; lidx < links.length; lidx++) {
