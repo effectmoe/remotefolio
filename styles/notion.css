@@ -410,4 +410,11 @@
     display: block;
     width: 100%;
   }
+
+  
+  .notion-page-content-has-aside .notion-page-content-inner {
+    width: 100%;
+    max-width: unset;
+  }
+  
 }
