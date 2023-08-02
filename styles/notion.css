@@ -20,13 +20,6 @@
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 
-  /* remotefolio */
-  padding: 0 2.5rem;
-  width: 100%;
-  max-width: 80rem;
-  box-sizing: unset;
-}
-
 
 .index-page {
   --notion-max-width: 900px;
@@ -394,6 +387,24 @@
   display: none;
 }
 
+
+
+
+  /* remotefolio CSSコード追加 */
+  .notion-page {
+  padding: 0 2.5rem;
+  width: 100%;
+  max-width: 80rem;
+  box-sizing: unset;
+}
+
+.notion-app{
+  background-color: #f0f0f3;
+  color: #85a4c4;
+}
+
+
+
 /* remotefolio メディアクエリ */
 @media screen and (max-width:767px) {
   .notion-page {
@@ -411,10 +422,12 @@
     width: 100%;
   }
 
-  
+
   .notion-page-content-has-aside .notion-page-content-inner {
     width: 100%;
     max-width: unset;
   }
   
 }
+
+
