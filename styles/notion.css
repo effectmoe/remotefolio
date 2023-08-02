@@ -393,7 +393,7 @@
   /* remotefolio CSSコード追加 */
   .notion-page {
   padding: 0 2.5rem;
-  width: 100%;
+  width: auto;
   max-width: 80rem;
   box-sizing: unset;
 }
