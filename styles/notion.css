@@ -426,11 +426,17 @@
 
 
 .notion .notion-code {
-  font-size: 1rem;
+  font-size: .875rem;
   width: 160px;
   background-color: #f0f0f3;
   border: none;
-  box-shadow: 6px 6px 10px rgba(174,174,192,.4), -6px -6px 10px #fff;
+  box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 !important;
+  color: #85a4c4 !important;
 }
 
 
