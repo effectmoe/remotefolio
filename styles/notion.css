@@ -19,6 +19,7 @@
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
+
   /* remotefolio */
   padding: 0 2.5rem;
   width: 100%;
@@ -397,5 +398,16 @@
 @media screen and (max-width:767px) {
   .notion-page {
     padding: 0 1.25rem;
+  }
+}
+
+
+.notion-page-content {
+  display: block;
+}
+@media (min-width: 1300px) and (min-height: 300px) {
+  .notion-page-content-has-aside {
+    display: block;
+    width: 100%;
   }
 }
