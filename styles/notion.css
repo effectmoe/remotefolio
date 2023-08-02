@@ -442,7 +442,9 @@ code[class*=language-], pre[class*=language-] {
   color: #85a4c4;
 }
 
-
+.notion-asset-wrapper img {
+  border-radius: 1.5rem;
+}
 
 /* remotefolio メディアクエリ */
 @media screen and (max-width:767px) {
