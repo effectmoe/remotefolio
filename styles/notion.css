@@ -403,6 +403,21 @@
   color: #85a4c4;
 }
 
+.notion-header {
+  background-color: #f0f0f3;
+}
+
+.notion-header .breadcrumbs{
+ color: #85a4c4;
+}
+
+.notion-header .notion-nav-header {
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  max-width: 80rem;
+  box-sizing: unset;
+  background-color: #f0f0f3;
+}
 
 
 /* remotefolio メディアクエリ */
@@ -410,12 +425,16 @@
   .notion-page {
     padding: 0 1.25rem;
   }
-}
 
+  .notion-header .notion-nav-header {
+    padding: 0 1.25rem;
+  }
+}
 
 .notion-page-content {
   display: block;
 }
+
 
 @media (min-width: 1300px) and (min-height: 300px) {
   .notion-page-content-has-aside {
