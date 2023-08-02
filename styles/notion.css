@@ -22,6 +22,8 @@
   /* remotefolio */
   padding: 0 2.5rem;
   width: 100%;
+  max-width: 80rem;
+  box-sizing: unset;
 }
 
 
