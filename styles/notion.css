@@ -438,6 +438,9 @@
   padding: 20px 0 !important;
   color: #85a4c4 !important;
 }
+code[class*=language-], pre[class*=language-] {
+  color: #85a4c4;
+}
 
 
 
