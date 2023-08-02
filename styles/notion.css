@@ -419,6 +419,21 @@
   background-color: #f0f0f3;
 }
 
+.notion-title{
+  font-size: 3rem;
+  color: #7889b3;
+}
+
+
+.notion .notion-code {
+  font-size: 1rem;
+  width: 160px;
+  background-color: #f0f0f3;
+  border: none;
+  box-shadow: 6px 6px 10px rgba(174,174,192,.4), -6px -6px 10px #fff;
+}
+
+
 
 /* remotefolio メディアクエリ */
 @media screen and (max-width:767px) {
