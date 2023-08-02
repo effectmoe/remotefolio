@@ -19,7 +19,7 @@
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
-
+}
 
 .index-page {
   --notion-max-width: 900px;
@@ -416,18 +416,15 @@
 .notion-page-content {
   display: block;
 }
+
 @media (min-width: 1300px) and (min-height: 300px) {
   .notion-page-content-has-aside {
     display: block;
     width: 100%;
   }
 
-
   .notion-page-content-has-aside .notion-page-content-inner {
     width: 100%;
     max-width: unset;
   }
-  
 }
-
-
