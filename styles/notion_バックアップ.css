@@ -19,11 +19,7 @@
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
-  /* remotefolio */
-  padding: 0 2.5rem;
-  width: 100%;
 }
-
 
 .index-page {
   --notion-max-width: 900px;
@@ -389,11 +385,4 @@
 
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
   display: none;
-}
-
-/* remotefolio メディアクエリ */
-@media screen and (max-width:767px) {
-  .notion-page {
-    padding: 0 1.25rem;
-  }
 }
