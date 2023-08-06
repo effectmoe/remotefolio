@@ -20,23 +20,3 @@ module.exports = withBundleAnalyzer({
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
 })
-
-
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
-
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    runtimeCaching,
-    buildExcludes: [/manifest.json$/],  // 追加
-  },
-})
-
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/
-});
-
-module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'md', 'mdx']
-});
