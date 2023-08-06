@@ -20,14 +20,13 @@ module.exports = withBundleAnalyzer({
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
 })
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
 
+
+
+const withPWA = require('next-pwa')({
+  dest: 'public'
+})
 
 module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    runtimeCaching,
-    buildExcludes: [/manifest.json/],  // 追加
-  },
+  // next.js config
 })
