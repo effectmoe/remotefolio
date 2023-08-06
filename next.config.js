@@ -28,6 +28,6 @@ module.exports = withPWA({
   pwa: {
     dest: 'public',
     runtimeCaching,
-    buildExcludes: [/manifest.json$/],  // 追加
+    buildExcludes: [/manifest.json/],  // 追加
   },
 })
