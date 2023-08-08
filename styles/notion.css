@@ -473,3 +473,16 @@ code[class*=language-], pre[class*=language-] {
     max-width: unset;
   }
 }
+
+/* 元々のボックスシャドウ削除 */
+.notion-collection-card-cover {
+  box-shadow: unset;
+}
+
+
+
+/* ボックスシャドウ追加 */
+.content-block-link {
+
+  box-shadow: -6px -6px 10px #fff, 6px 6px 10px rgba(174,174,192,.4);
+}
