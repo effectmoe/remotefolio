@@ -30,3 +30,18 @@ module.exports = withPWA({
     dest: 'public'
   }
 })
+
+
+const { GenerateSW } = require('workbox-webpack-plugin');
+
+module.exports = {
+  webpack: (config) => {
+    config.plugins.push(
+      new GenerateSW({
+        // オプションをここに追加します
+      })
+    );
+
+    return config;
+  },
+};
