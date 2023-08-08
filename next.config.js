@@ -23,27 +23,26 @@ module.exports = withBundleAnalyzer({
 
 
 
-
-
 const withPWA = require('next-pwa')
 
 module.exports = withPWA({
-  reactStrictMode: true,
-  pwa:{
-    dest:"public",
-    register:true,
-    skipWaiting:true,
-    disable:process.env.NODE_ENV === 'development'
+  pwa: {
+    dest: 'public'
   }
-});
+})
+
 
 const { GenerateSW } = require('workbox-webpack-plugin');
 
 module.exports = {
-  // その他のwebpack設定
-  plugins: [
-    new GenerateSW({
-      // ここでオプションを設定しますが、'pwa' プロパティは通常は含まれません
-    })
-  ],
-}
+  webpack: (config) => {
+    config.plugins.push(
+      new GenerateSW({
+        // オプションをここに追加します
+      })
+    );
+
+    return config;
+  },
+};
+
