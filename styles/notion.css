@@ -476,6 +476,7 @@ code[class*=language-], pre[class*=language-] {
 /* 元々のボックスシャドウ削除 */
 .notion-collection-card-cover {
   box-shadow: unset;
+  padding: 10px;
 }
 
 /* ボックスシャドウ追加 */
