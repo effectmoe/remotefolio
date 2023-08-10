@@ -76,11 +76,17 @@
   font-size: 14px;
 }
 
+/* カードのデザイン */
 .notion-collection-card {
   border-radius: 16px;
   box-shadow: none;
   background-color: #f0f0f3;
   box-shadow: -6px -6px 10px #fff, 6px 6px 10px rgba(174, 174, 192, .4);
+  padding: 10px;
+  }
+  .notion-collection-card-cover {
+    border-radius: 16px;
+  }
 }
 
 .notion-collection-card-cover img {
