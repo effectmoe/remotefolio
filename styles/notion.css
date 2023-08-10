@@ -490,13 +490,17 @@ code[class*=language-], pre[class*=language-] {
   box-shadow: -6px -6px 10px #fff, 6px 6px 10px rgba(174,174,192,.4);
 }
 
+/* カード間 余白 */
+.notion-gallery-grid {
+  gap: 1.5rem;
+}
 
 /* カード内テキストカラー */
 .notion-collection-card-body,
 .notion-collection-card .notion-page-link {
   color: #7889b3;
 }
-/* カード内テキストテキスト余白 */
+/* カード内テキスト余白 */
 .notion-collection-card-body {
   padding: 20px;
 }
