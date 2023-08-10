@@ -83,7 +83,14 @@
   background-color: #f0f0f3;
   box-shadow: -6px -6px 10px #fff, 6px 6px 10px rgba(174, 174, 192, .4);
   padding: 10px;
+  overflow: visible;
+  transition: box-shadow .4s;
   }
+  .notion-collection-card:hover {
+    background: unset;
+    box-shadow: -11px -11px 18px #fff, 11px 11px 18px rgba(174, 174, 192, .4);
+  }
+  
   .notion-collection-card-cover {
     border-radius: 16px;
   }
