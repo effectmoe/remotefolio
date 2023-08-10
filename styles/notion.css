@@ -112,6 +112,11 @@
   padding: 10px;
 }
 
+/* 元々のボックスシャドウ削除 */
+.notion-collection-card-cover {
+  box-shadow: unset;
+}
+
 /* only target safari */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   _::-webkit-full-page-media,
@@ -477,10 +482,7 @@ code[class*=language-], pre[class*=language-] {
     max-width: unset;
   }
 }
-/* 元々のボックスシャドウ削除 */
-.notion-collection-card-cover {
-  box-shadow: unset;
-}
+
 
 /* ボックスシャドウ追加 */
 .content-block-link {
