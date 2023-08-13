@@ -21,5 +21,14 @@ module.exports = withBundleAnalyzer({
   }
 })
 
+const withWorkbox = require("next-with-workbox");
 
+module.exports = withWorkbox({
+  workbox: {
+    swSrc: "worker.js",
+  },
+  // .
+  // ..
+  // ... other Next.js config
+});
 
