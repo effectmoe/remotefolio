@@ -7,8 +7,8 @@
   "/api/notion-page-info": "pages/api/notion-page-info.js",
   "/api/search-notion": "pages/api/search-notion.js",
   "/[pageId]": "pages/[pageId].js",
-  "/robots.txt": "pages/robots.txt.js",
   "/index_old": "pages/index_old.js",
-  "/feed": "pages/feed.js",
-  "/sitemap.xml": "pages/sitemap.xml.js"
+  "/robots.txt": "pages/robots.txt.js",
+  "/sitemap.xml": "pages/sitemap.xml.js",
+  "/feed": "pages/feed.js"
 }
