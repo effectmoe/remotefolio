@@ -572,7 +572,7 @@ code[class*=language-], pre[class*=language-] {
 
 
 /* リンクボタン テキストリンク */
-.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce .notion-link{
+.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce span.notion-property.notion-property-text .notion-link{
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -591,7 +591,7 @@ code[class*=language-], pre[class*=language-] {
 
 
 /* リンクボタン テキストリンク　ホバー */
-.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce .notion-link:hover {
+.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce span.notion-property.notion-property-text .notion-link:hover {
   border-bottom-color: transparent;
   background-image: unset;
   background-repeat: unset;
