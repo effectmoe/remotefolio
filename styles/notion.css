@@ -658,3 +658,8 @@ code[class*=language-], pre[class*=language-] {
   max-width: 25px;
   max-height: 25px;
 }
+
+/* タイトル横svg絵文字アイコンスタート高さ位置 */
+.notion-page-title {
+  align-items: start;
+}
