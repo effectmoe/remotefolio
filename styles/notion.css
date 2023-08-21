@@ -657,6 +657,7 @@ code[class*=language-], pre[class*=language-] {
   font-size: 2em;
   max-width: 25px;
   max-height: 25px;
+  margin-top: 6px;
 }
 
 /* タイトル横svg絵文字アイコンスタート高さ位置 */
