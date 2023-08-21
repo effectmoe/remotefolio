@@ -579,7 +579,7 @@ code[class*=language-], pre[class*=language-] {
   background-position: unset;
   background-size: unset;
   transition-property: unset;
-  transition-duration: .3s;
+  transition-duration: unset;
 }
 .notion-block-5fea3b496e06427e8b1100ec1ddbe2ce span.notion-property.notion-property-text .notion-link {
   display: flex;
