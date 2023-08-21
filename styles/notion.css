@@ -540,3 +540,29 @@ code[class*=language-], pre[class*=language-] {
 .notion-gallery-grid {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
+
+
+  /* 飛び出しボタン */
+.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce .notion-property-file img {
+  margin-right: 0px;
+}
+.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce a.notion-property-file {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  color: #7889b3;
+  background-color: #f0f0f3;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all .4s cubic-bezier(.215, .61, .355, 1);
+  box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
+}
+
+.notion-block-5fea3b496e06427e8b1100ec1ddbe2ce a.notion-property-file:hover {
+  box-shadow: 11px 11px 18px rgba(174, 174, 192, .4), -11px -11px 18px #fff;
+}
