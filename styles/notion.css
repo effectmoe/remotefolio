@@ -645,3 +645,8 @@ code[class*=language-], pre[class*=language-] {
 .notion-page-icon-inline {
   display: block;
 }
+
+/* トグルマージン */
+.notion-toggle>div {
+  margin: 35px 0 0;
+}
