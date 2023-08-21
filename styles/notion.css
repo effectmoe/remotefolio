@@ -648,11 +648,13 @@ code[class*=language-], pre[class*=language-] {
 
 /* タイトル横svg絵文字アイコンサイズ */
 .notion-gallery-grid .notion-page-icon-inline {
-  max-width: 45px;
-  max-height: 45px;
+  max-width: 25px;
+  max-height: 25px;
 }
 .notion-collection-card-property .notion-page-title-icon {
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   font-size: 2em;
+  max-width: 25px;
+  max-height: 25px;
 }
