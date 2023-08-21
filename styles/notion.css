@@ -637,16 +637,11 @@ code[class*=language-], pre[class*=language-] {
   border-radius: 1.25rem;
   padding: 2rem 2.5rem 2.5rem;
   box-shadow: inset -6px -6px 10px #fff, inset 6px 6px 10px rgba(174, 174, 192, .4);
-  margin: 70px 0 0 0;
+  margin: 35px 0 0 0;
 }
 
 
-/* タイトルアイコン表示 */
-.notion-page-icon-inline {
+/* タイトル横絵文字svg表示 */
+.notion-gallery-grid .notion-page-icon-inline {
   display: block;
-}
-
-/* トグルマージン */
-.notion-toggle>div {
-  margin: 35px 0 0;
 }
