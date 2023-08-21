@@ -566,3 +566,15 @@ code[class*=language-], pre[class*=language-] {
 .notion-block-5fea3b496e06427e8b1100ec1ddbe2ce a.notion-property-file:hover {
   box-shadow: 11px 11px 18px rgba(174, 174, 192, .4), -11px -11px 18px #fff;
 }
+
+
+/* リンクボタン ホバー */
+notion-block-5fea3b496e06427e8b1100ec1ddbe2ce .notion-link:hover {
+  border-bottom-color: transparent;
+  background-image: unset;
+  background-repeat: unset;
+  background-position: unset;
+  background-size: unset;
+  transition-property: unset;
+  transition-duration: .3s;
+}
