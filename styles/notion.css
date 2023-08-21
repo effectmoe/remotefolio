@@ -645,3 +645,14 @@ code[class*=language-], pre[class*=language-] {
 .notion-gallery-grid .notion-page-icon-inline {
   display: block;
 }
+
+/* タイトル横svg絵文字アイコンサイズ */
+.notion-gallery-grid .notion-page-icon-inline {
+  max-width: 45px;
+  max-height: 45px;
+}
+.notion-collection-card-property .notion-page-title-icon {
+  width: 45px;
+  height: 45px;
+  font-size: 2em;
+}
