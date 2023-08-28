@@ -15,7 +15,7 @@ module.exports = withBundleAnalyzer({
       's3.us-west-2.amazonaws.com',
       'transitivebullsh.it'
     ],
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/avif', 'image/webp', 'image/jpg', 'image/png', 'image/gif'],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
@@ -34,8 +34,3 @@ const nextConfig = {
 
 module.exports = withPWA(nextConfig)
 
-module.exports = {
-  images: {
-    domains: ['notion.site'],
-  },
-};
