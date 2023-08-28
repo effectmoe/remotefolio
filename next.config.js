@@ -36,6 +36,6 @@ module.exports = withPWA(nextConfig)
 
 module.exports = {
   images: {
-    domains: ['notion.so'],
+    domains: ['notion.site'],
   },
 };
