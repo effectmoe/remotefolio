@@ -31,13 +31,6 @@ messaging.onBackgroundMessage((payload) => {
   return self.registration.showNotification(notificationTitle, notificationOptions);
 });
 
-messaging.onMessage((payload) => {
-  console.log('Message received. ', payload);
-  if (payload.data.nid && payload.data.uid) {
-    firestore.collection('notifications').doc(payload.data.nid).update({recivepersons: firestore.FieldValue.arrayUnion(payload.data.uid), openpersons: firestore.FieldValue.arrayUnion(event.notification.data.uid)});
-  }  
-});
-
 self.addEventListener('notificationclick', (event) => {
   if (event.notification.data.nid && event.notification.data.uid) {
     firestore.collection('notifications').doc(event.notification.data.nid).update({openpersons: firestore.FieldValue.arrayUnion(event.notification.data.uid)});
