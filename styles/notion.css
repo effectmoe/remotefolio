@@ -685,3 +685,13 @@ element.style {
   transform: translateY(-50%);
   left: 0;
 }
+
+
+/* フッターメニューレイアウト */
+.notion-row.notion-block-84a9c598b36d4abaa90a1315f3f38cd8{
+    display: flex;
+    overflow: hidden;
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+}
