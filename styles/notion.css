@@ -699,3 +699,26 @@ element.style {
     max-width: 100%;
     margin: 0 auto;
 }
+
+
+/* フッターsnsリンクの横幅 */
+.notion-block-675a4b8b58ce4121a2cb91568beffa03 .notion-column {
+  width: auto !important;
+}
+
+.notion-block-675a4b8b58ce4121a2cb91568beffa03{
+  width: 300px;
+}
+
+/* snsアイコン装飾 */
+.notion-block-675a4b8b58ce4121a2cb91568beffa03 figure.notion-asset-wrapper.notion-asset-wrapper-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 36px;
+  transition: all .4s cubic-bezier(.215, .61, .355, 1);
+  display: flex;
+  box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
+  border-radius: 50%;
+}
