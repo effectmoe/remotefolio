@@ -673,7 +673,7 @@ element.style {
 }
 
 
-/* 日付の装飾 */
+/* 日付の装飾 疑似要素 */
 .notion-block-1f8f56d5375d4d5b959e364119ebcef0 span.notion-property.notion-property-date {
   position: relative;
   padding-left: 15px;
