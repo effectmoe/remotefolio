@@ -721,3 +721,8 @@ element.style {
   box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
   border-radius: 50%;
 }
+
+/* snsアイコン装飾 マウスオーバー時 */
+.notion-block-675a4b8b58ce4121a2cb91568beffa03 .notion-column:hover figure.notion-asset-wrapper.notion-asset-wrapper-image {
+  box-shadow: 11px 11px 18px rgba(174, 174, 192, .4), -11px -11px 18px #fff;
+}
