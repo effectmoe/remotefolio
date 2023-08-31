@@ -707,7 +707,7 @@ element.style {
 }
 
 .notion-block-675a4b8b58ce4121a2cb91568beffa03{
-  width: 300px;
+ justify-content: center;
 }
 
 /* snsアイコン装飾 */
@@ -718,7 +718,6 @@ element.style {
   padding: 10px;
   width: 36px;
   transition: all .4s cubic-bezier(.215, .61, .355, 1);
-  display: flex;
   box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
   border-radius: 50%;
 }
