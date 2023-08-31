@@ -686,6 +686,10 @@ element.style {
   left: 0;
 }
 
+/* フッターリンクの横幅 */
+.notion-row.notion-block-84a9c598b36d4abaa90a1315f3f38cd8 .notion-column {
+  width: auto !important;
+}
 
 /* フッターメニューレイアウト */
 .notion-row.notion-block-84a9c598b36d4abaa90a1315f3f38cd8{
