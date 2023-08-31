@@ -664,3 +664,24 @@ code[class*=language-], pre[class*=language-] {
 .notion-page-title {
   align-items: start;
 }
+
+/* サムネイル 日付テキスト装飾 */
+element.style {
+    font-family: ui-sans-serif, system-ui, -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 12px;
+    FONT-WEIGHT: bold;
+}
+
+
+/* 日付の装飾 */
+.notion-block-1f8f56d5375d4d5b959e364119ebcef0 span.notion-property.notion-property-date {
+  position: relative;
+  padding-left: 15px;
+}
+.notion-block-1f8f56d5375d4d5b959e364119ebcef0 span.notion-property.notion-property-date::before {
+  position: absolute;
+  content: "■";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
