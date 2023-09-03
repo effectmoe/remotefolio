@@ -25,7 +25,7 @@ messaging.onBackgroundMessage(async (payload) => {
   };
   console.log(`firebase onBackgroundMessage.`);
   if (payload.data.nid && payload.data.uid) {
-    await fetch('https://asia-northeast1-pwapushtest-ca52a.cloudfunctions.net/recivenotification', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ nid: payload.data.nid, uid: payload.data.uid, }) });
+    await fetch('https://asia-northeast1-pwapushtest-ca52a.cloudfunctions.net/recivenotification', { mode: 'no-cors', method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ nid: payload.data.nid, uid: payload.data.uid, }) });
   }
   return self.registration.showNotification(notificationTitle, notificationOptions);
 });
@@ -33,7 +33,7 @@ messaging.onBackgroundMessage(async (payload) => {
 self.addEventListener('notificationclick', async (event) => {
   console.log('click notify', event);
   if (event.notification.data && event.notification.data.nid && event.notification.data.uid) {
-    await fetch('https://asia-northeast1-pwapushtest-ca52a.cloudfunctions.net/opennotification', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ nid: event.notification.data.nid, uid: event.notification.data.uid, }) });
+    await fetch('https://asia-northeast1-pwapushtest-ca52a.cloudfunctions.net/opennotification', { mode: 'no-cors', method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ nid: event.notification.data.nid, uid: event.notification.data.uid, }) });
   }
   event.notification.close();
 });
