@@ -833,7 +833,3 @@ element.style {
 .notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-cover img {
   aspect-ratio: 1 / 1;
 }
-
-.notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card .notion-collection-card-cover img {
-  max-height: 484px !important;
-}
