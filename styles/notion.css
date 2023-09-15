@@ -819,3 +819,16 @@ element.style {
     grid-area: 4 / 1 / 5 / 5;
   }
 }
+
+
+
+
+.notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-body {
+  display: none;
+}
+.notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-cover {
+  height: auto;
+}
+.notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-cover img {
+  aspect-ratio: 1 / 1;
+}
