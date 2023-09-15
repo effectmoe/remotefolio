@@ -826,7 +826,7 @@ element.style {
 .notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-body {
   display: none;
 }
-.notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-cover {
+.notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card .notion-collection-card-cover {
   height: auto;
 }
 .notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-cover img {
