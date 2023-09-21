@@ -918,3 +918,14 @@ element.style {
 a.styles_githubCorner__7QjNo {
   opacity: 0;
 }
+
+
+/* ギットハブアイコン */
+.notion.notion-app.light-mode.notion-block-c4ab6ca30921498f911a717efec8b74c {
+  overflow: hidden;
+}
+a.styles_githubCorner__7QjNo {
+  position: absolute;
+  right: 0;
+  top: -130px;
+}
