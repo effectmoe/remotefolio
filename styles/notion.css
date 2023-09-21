@@ -844,3 +844,27 @@ element.style {
   max-width: 100%;
   overflow: hidden;
 }
+
+/* ボタンの装飾 */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  padding: 0 4px;
+  margin: 30px 15px;
+  width: 20%;
+  display: flex;
+  color: #85a4c4;
+  text-transform: uppercase;
+  background-color: #f0f0f3;
+  border-radius: 1rem;
+  padding: 1.25rem 2.5rem;
+  font-size: .875rem;
+  line-height: 1;
+  transition: all .3s;
+  box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
+}
+/* ボタンのホバー時 */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-
