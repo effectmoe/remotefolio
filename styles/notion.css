@@ -867,4 +867,18 @@ element.style {
   box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
 }
 /* ボタンのホバー時 */
-.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link:hover {
+  box-shadow: 10px 10px 16px rgba(174, 174, 192, .4), -10px -10px 16px #fff;
+  background-color: #f0f0f3;
+}
+
+/* ボタン内天地中央*/
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-page-link:hover {
+  background: unset;
+}
