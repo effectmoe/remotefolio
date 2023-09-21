@@ -929,3 +929,15 @@ a.styles_githubCorner__7QjNo {
   right: 0;
   top: -130px;
 }
+
+/* News & Articlesページのメディアクエリ */
+@media screen and (max-width:768px) {
+  /* ボタンメディアクエリ */
+  .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-list-body {
+    flex-direction: column;
+  }
+  .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link {
+    margin: 10px 20px;
+    width: 60%;
+  }
+}
