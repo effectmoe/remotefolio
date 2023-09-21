@@ -833,3 +833,14 @@ element.style {
 .notion-block-e4314a2d0fe44c20b8286277faf37c05 .notion-collection-card:nth-of-type(2) .notion-collection-card-cover img {
   aspect-ratio: 1 / 1;
 }
+
+
+
+/* button装飾 */
+/* ボタン横並び */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-list-body {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  overflow: hidden;
+}
