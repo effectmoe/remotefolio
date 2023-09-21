@@ -902,3 +902,9 @@ element.style {
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-list-item-title {
   overflow: unset;
 }
+
+
+/* ブログ記事内のプロパティのマージン */
+.notion-property .notion-property-text{
+  margin: 5px 0px;
+}
