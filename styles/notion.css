@@ -903,6 +903,11 @@ element.style {
   overflow: unset;
 }
 
+/* 立体button */
+/* ボタン 不要なテキスト削除 */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-page-link .notion-list-item-body {
+  display: none;
+}
 
 /* ブログ記事内のプロパティのマージン */
 .notion-collection-row-property .notion-property{
