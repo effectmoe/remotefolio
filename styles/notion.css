@@ -896,3 +896,9 @@ element.style {
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link .notion-page-title {
   align-items: center;
 }
+
+/* 立体button */
+/* ボタンテキスト省略の解除 */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-list-item-title {
+  overflow: unset;
+}
