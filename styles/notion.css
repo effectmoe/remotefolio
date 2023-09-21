@@ -909,12 +909,12 @@ element.style {
   margin: 5px 0px;
 }
 
-/* フッターのアイコン消す
+/* フッターのGitHub消す
 .styles_social__ptL3p {
   display: none;
 } */
 
 ヘッターGitHub消す
 a.styles_githubCorner__7QjNo {
-    display: none;
+  opacity: 0;
 }
