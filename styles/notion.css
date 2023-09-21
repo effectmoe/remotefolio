@@ -905,6 +905,6 @@ element.style {
 
 
 /* ブログ記事内のプロパティのマージン */
-.notion-property .notion-property-text{
+.notion-collection-row-property .notion-property{
   margin: 5px 0px;
 }
