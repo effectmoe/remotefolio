@@ -836,7 +836,7 @@ element.style {
 
 
 
-/* button装飾 */
+/* 立体button */
 /* ボタン横並び */
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-list-body {
   display: flex;
@@ -844,7 +844,7 @@ element.style {
   max-width: 100%;
   overflow: hidden;
 }
-
+/* 立体button */
 /* ボタンの装飾 */
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link {
   display: flex;
@@ -866,12 +866,13 @@ element.style {
   transition: all .3s;
   box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
 }
+/* 立体button */
 /* ボタンのホバー時 */
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link:hover {
   box-shadow: 10px 10px 16px rgba(174, 174, 192, .4), -10px -10px 16px #fff;
   background-color: #f0f0f3;
 }
-
+/* 立体button */
 /* ボタン内天地中央*/
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-page-link {
   display: flex;
@@ -881,4 +882,17 @@ element.style {
 
 .notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-page-link:hover {
   background: unset;
+}
+
+/* 立体button */
+/* ボタンテキストカラー */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link .notion-page-title-text {
+  color: #85a4c4;
+  border: none;
+}
+
+/* 立体button */
+/* ボタンテキストとimg上下中央 */
+.notion-collection.notion-block-8e04c915cb7940fcb6c9f0fc1236619e a.notion-list-item.notion-page-link .notion-page-title {
+  align-items: center;
 }
