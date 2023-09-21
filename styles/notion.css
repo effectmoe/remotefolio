@@ -908,3 +908,8 @@ element.style {
 .notion-collection-row-property .notion-property{
   margin: 5px 0px;
 }
+
+/* フッターのアイコン消す */
+.styles_social__ptL3p {
+  display: none;
+}
