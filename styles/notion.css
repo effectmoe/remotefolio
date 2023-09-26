@@ -946,3 +946,14 @@ a.styles_githubCorner__7QjNo {
     width: 60%;
   }
 }
+
+
+/* フォームの背景色変更 */
+.notion-asset-wrapper.notion-block-902e8f55b9c44e71acfbb3705a9d80fe iframe {
+  background: #f0f0f3;
+}
+body {
+  background-color: transparent;
+}
+
+
