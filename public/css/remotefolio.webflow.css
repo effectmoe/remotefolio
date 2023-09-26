@@ -3366,6 +3366,9 @@ figure {
 .big-icon img {
   max-width: 96px;
 }
+.big-icon span {
+  font-size: 6rem;
+}
 
 .input-wrapper {
   color: #85a4c4;
