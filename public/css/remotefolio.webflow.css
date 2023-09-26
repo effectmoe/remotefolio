@@ -3363,6 +3363,9 @@ figure {
   line-height: 1;
   display: inline-block;
 }
+.big-icon img {
+  max-width: 96px;
+}
 
 .input-wrapper {
   color: #85a4c4;
