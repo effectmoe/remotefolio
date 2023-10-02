@@ -5712,3 +5712,8 @@ figure {
 .service-icon .material-symbols-outlined{
   font-size: 3rem !important;
 }
+
+
+.service-icon img{
+  width: 3rem;
+}
