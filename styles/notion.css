@@ -957,3 +957,14 @@ body {
 }
 
 
+/* 右下３つのアイコンを外へ */
+.styles_footer__RBpyk {
+  position: relative;
+  overflow: hidden;
+  justify-content: start;
+}
+.styles_social__ptL3p {
+  position: absolute;
+  right: 0;
+  bottom: -200px;
+}
