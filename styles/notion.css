@@ -704,7 +704,7 @@ element.style {
 }
 
 
-/* フッターsnsリンクの横幅 */
+/* フッターsnsリンクの横幅1 */
 .notion-block-675a4b8b58ce4121a2cb91568beffa03 .notion-column {
   width: auto !important;
   padding: 30px 0;
@@ -714,7 +714,7 @@ element.style {
  justify-content: center;
 }
 
-/* snsアイコン装飾 */
+/* snsアイコン装飾1 */
 .notion-block-675a4b8b58ce4121a2cb91568beffa03 figure.notion-asset-wrapper.notion-asset-wrapper-image {
   display: flex;
   align-items: center;
@@ -726,8 +726,35 @@ element.style {
   border-radius: 50%;
 }
 
-/* snsアイコン装飾 マウスオーバー時 */
+/* snsアイコン装飾 マウスオーバー時1 */
 .notion-block-675a4b8b58ce4121a2cb91568beffa03 .notion-column:hover figure.notion-asset-wrapper.notion-asset-wrapper-image {
+  box-shadow: 11px 11px 18px rgba(174, 174, 192, .4), -11px -11px 18px #fff;
+}
+
+/* フッターsnsリンクの横幅2 */
+.notion-block-733632e06f464c949798b58b31c56364 .notion-column {
+  width: auto !important;
+  padding: 30px 0;
+}
+
+.notion-block-733632e06f464c949798b58b31c56364{
+ justify-content: center;
+}
+
+/* snsアイコン装飾2 */
+.notion-block-733632e06f464c949798b58b31c56364 figure.notion-asset-wrapper.notion-asset-wrapper-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 36px;
+  transition: all .4s cubic-bezier(.215, .61, .355, 1);
+  box-shadow: 6px 6px 10px rgba(174, 174, 192, .4), -6px -6px 10px #fff;
+  border-radius: 50%;
+}
+
+/* snsアイコン装飾 マウスオーバー時2 */
+.notion-block-733632e06f464c949798b58b31c56364 .notion-column:hover figure.notion-asset-wrapper.notion-asset-wrapper-image {
   box-shadow: 11px 11px 18px rgba(174, 174, 192, .4), -11px -11px 18px #fff;
 }
 
