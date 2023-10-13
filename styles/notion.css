@@ -998,3 +998,27 @@ body {
 }
 
 
+/* カード3枚並び */
+.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-gallery-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* タイトルの絵文字位置 */
+.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-collection-card-property .notion-page-title {
+  position: relative;
+}
+.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-gallery-grid .notion-page-icon-inline {
+  display: block;
+  max-width: 20px;
+  max-height: 20px;
+  position: absolute;
+  left: -30px;
+  margin: 0;
+}
+@media screen and (max-width:991px) {
+  /* 991px以下でカード1枚並び */
+  .notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
