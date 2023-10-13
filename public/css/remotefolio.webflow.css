@@ -5724,3 +5724,11 @@ figure {
 #w-node-_5ad69f84-9254-341a-396b-42027b36c779-35a51bdf .card-icon .material-symbols-outlined {
   font-size: 2.5rem;
 }
+
+/* TOPページアイコンのポジション */
+@media screen and (max-width:991px) {
+  /* 991px以下でカード内左揃え */
+  .w-layout-grid.main-grid .inner-grid {
+    width: 100%;
+  }
+}
