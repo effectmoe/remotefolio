@@ -996,3 +996,9 @@ body {
   right: 0;
   bottom: -200px;
 }
+
+
+/* ブログアイコンのサイズ（google_material） */
+#w-node-_5ad69f84-9254-341a-396b-42027b36c779-35a51bdf .card-icon .material-symbols-outlined {
+  font-size: 2.5rem;
+}
