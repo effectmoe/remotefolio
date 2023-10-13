@@ -1008,14 +1008,21 @@ body {
 .notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-collection-card-property .notion-page-title {
   position: relative;
 }
+
 .notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-gallery-grid .notion-page-icon-inline {
   display: block;
   max-width: 20px;
   max-height: 20px;
   position: absolute;
+  top: 50%;
   left: -30px;
+  transform: translateY(-50%);
   margin: 0;
 }
+.notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-collection-card-property .notion-page-title-icon {
+  margin-top: 0;
+}
+
 @media screen and (max-width:991px) {
   /* 991px以下でカード1枚並び */
   .notion-block-8e04c915cb7940fcb6c9f0fc1236619e .notion-gallery-grid {
